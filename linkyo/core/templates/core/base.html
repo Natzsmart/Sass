@@ -10,7 +10,10 @@
 
         <style>
           body {
-          
+            text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            
+          }
+       
           
               .StripeElement {
                 box-sizing: border-box;
@@ -51,8 +54,8 @@
               #submit {
                 font-feature-settings: "pnum";
                 --body-color: #f7fafc;
-                --button-color: #556cd6;
-                --accent-color: #556cd6;
+                --button-color: hsl(9, 100%, 64%);
+                --accent-color: hsl(9, 100%, 64%);
                 --gray-border: #e3e8ee;
                 --link-color: #fff;
                 --font-color: #697386;
@@ -94,8 +97,8 @@
     </head>
 
     <body>
-        <nav class="p-6 flex items-center justify-between bg-gray-800">
-            <a href="/" class="text-xl text-cyan-500">Linkyo</a>
+        <nav class="p-6 flex items-center justify-between bg-purple-800">
+            <a href="/" class="text-xl text-white" style="text-transform: uppercase;font-weight: 700;">Linkyo</a>
 
             <div class="space-x-4">
                 <a href="{% url 'core:about' %}" class="text-white">About</a>
@@ -108,8 +111,8 @@
                     <a href="{% url 'links:create_link' %}" class="py-4 px-6 bg-emerald-600 text-white rounded-xl">Create link</a>
                     <a href="{% url 'accounts:logout' %}" class="py-4 px-6 bg-rose-600 text-white rounded-xl">Log out</a>
                 {% else %}
-                    <a href="{% url 'accounts:signup' %}" class="py-4 px-6 bg-cyan-600 text-white rounded-xl">Sign up</a>
-                    <a href="{% url 'accounts:login' %}" class="py-4 px-6 bg-gray-600 text-white rounded-xl">Log in</a>
+                    <a href="{% url 'accounts:signup' %}" class="py-4 px-6 bg-red-600 text-white rounded-xl">Sign up</a>
+                    <a href="{% url 'accounts:login' %}" class="py-4 px-6 bg-red-600 text-white rounded-xl">Log in</a>
                 {% endif %}
             </div>
         </nav>
@@ -118,8 +121,7 @@
             {% block content %}
             {% endblock %}
         </main>
-
-        <footer class="p-6 bg-gray-900">
+        <footer class="p-6 bg-purple-900"  style="position: fixed ; bottom: 0; width: 100%; text-align: center;">
             <p class="text-xs text-gray-400">Copyright (c) 2023 - Linkyo</p>
         </footer>
     </body>
@@ -282,5 +284,7 @@ function planSelect(name, price, priceId) {
       document.querySelector("#button-text").classList.remove("hidden");
     }
   };
+
+  
 </script>
 </html>

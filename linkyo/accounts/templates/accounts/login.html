@@ -3,13 +3,21 @@
 {% block title %}Log in{% endblock %}
 
 {% block content %}
-    <h1 class="text-xl">Log in</h1>
+    <h1 class="text-xl" style="text-align: center; font-size:40px; font-weight:500; color:purple; margin-top: 50px;">Log in</h1>
 
-    <form method="post" action=".">
+    <form method="post" action="." style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); display: grid;">
         {% csrf_token %}
 
-        {{ form.as_p }}
+        <div style="margin-bottom: 10px; display: grid;">
+            <label for="{{ form.username.id_for_label }}">Username</label>
+            <input type="text" name="{{ form.username.html_name }}" id="{{ form.username.id_for_label }}" style="color: red; font-size: 20px; border: 1px solid gray; place-self: right; outline: 0.02em dashed; outline-offset: 3px; outline-color: purple; border-radius: 10px; padding-left: 6px;">
+        </div>
 
-        <button class="mt-4 py-4 px-6 bg-cyan-500 text-white rounded-xl">Submit</button>
+        <div style="margin-bottom: 10px; display: grid;">
+            <label for="{{ form.password.id_for_label }}">Password</label>
+            <input type="password" name="{{ form.password.html_name }}" id="{{ form.password.id_for_label }}" style="color: red; font-size: 20px; border: 1px solid gray; place-self: right; outline: 0.02em dashed; outline-offset: 3px; outline-color: purple; border-radius: 10px; padding-left: 6px;">
+        </div>
+
+        <button class="mt-4 py-4 px-6 bg-red-500 text-white rounded-xl" style="place-self: center; gap: 10px;">Submit</button>
     </form>
 {% endblock %}
