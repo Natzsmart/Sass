@@ -77,8 +77,8 @@ Please ensure your code follows the project's coding conventions and includes ap
 ## Contributors
 
 - Ifeanyi Kalu (@ifeanyikalux)
-- Iniobong Effiong (@iniobongeffiong)
-- Drig ODIBE (@drigodibe)
+- Iniobong Effiong (@Natzsmart)
+- Drig ODIBE (@drignet)
 
 ## License
 This project is licensed under the MIT License.
