@@ -76,9 +76,9 @@ Please ensure your code follows the project's coding conventions and includes ap
 
 ## Contributors
 
-- Ifeanyi Kalu (@ifeanyikalux)
-- Iniobong Effiong (@Natzsmart)
-- Drig ODIBE (@drignet)
+- [Ifeanyi Kalu](https://github.com/fazzy12)
+- [Iniobong Effiong](https://github.com/Natzsmart)
+- [Drig ODIBE](https://github.com/drignet)
 
 ## License
 This project is licensed under the MIT License.
